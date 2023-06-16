@@ -1,0 +1,16 @@
+{
+  "name": "mqtt-node-mysql-app",
+  "version": "1.0.0",
+  "description": "This is a POC to figure the usage of MQTT system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mqtt": "^4.2.7",
+    "mysql": "^2.18.1",
+    "wait-for-it": "^1.0.0"
+  },
+  "author": "William Romero",
+  "license": "ISC"
+}

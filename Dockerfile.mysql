@@ -1,0 +1,10 @@
+FROM mysql:latest
+
+# Copiar el archivo de configuración personalizado
+COPY my.cnf /etc/mysql/my.cnf
+
+# Cambiar los permisos y propietario del archivo de socket
+RUN mkdir -p /var/run/mysqld && \
+    chown -R mysql:mysql /var/run/mysqld
+
+CMD ["mysqld"]

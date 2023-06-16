@@ -1,0 +1,5 @@
+# Usamos una imagen base oficial de Eclipse Mosquitto
+FROM eclipse-mosquitto
+
+# Copiamos el archivo de configuración personalizado
+COPY mosquitto.conf /mosquitto/config/mosquitto.conf
