@@ -39,6 +39,8 @@ services:
     depends_on:
       - mysql
       - mqtts
+    networks:
+      - backend
     
 networks:
   backend:

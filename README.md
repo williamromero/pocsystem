@@ -6,6 +6,10 @@ Delete previous containers:
 
 ```bash
   docker ps -a
+  docker-compose down
+  docker network prune
+  docker volume prune
+  docker rmi $(docker images -q)
   docker stop $(docker ps -a -q)
   docker rm container_01 container_02
   docker-compose up
